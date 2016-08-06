@@ -18,7 +18,9 @@
 
   <div class="field">
     <%= f.label :avatar %>
+    <%= image_tag(user.avatar_url) if @user.avatar? %>
     <%= f.file_field :avatar %>
+    <%= f.hidden_field :avatar_cache %>
   </div>
 
   <div class="actions">
