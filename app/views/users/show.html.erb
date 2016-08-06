@@ -7,7 +7,7 @@
 
 <p>
   <strong>Avatar:</strong>
-  <%= image_tag @user.avatar.url %>
+  <%= image_tag @user.avatar.thumb.url %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
